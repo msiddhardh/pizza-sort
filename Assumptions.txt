@@ -1,0 +1,7 @@
+Record in dataset with null name or time will be ignored.
+If two or more records exist with the same timestamp they get sorted in alphabetical order by name
+When comparing by name case is not ignored (Capitalized words come before lowerCase words).
+Header is always provided as the first line in the file
+Delimiter is \t. 
+The column order is maintained i.e. Order Name is followed by timestamp.
+The input and output files are both txt. 

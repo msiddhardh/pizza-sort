@@ -1,0 +1,9 @@
+Run instructions:-
+The application requires two parameters to be passed in while executing the jar file from command line. 
+For example-
+java -jar target/PizzaSort.jar input.txt output.txt 
+
+
+Where, 
+input.txt is the absolute path for the source file &
+output.txt is the absolute path for the sorted output/destination file.

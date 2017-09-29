@@ -1,0 +1,22 @@
+I have used a Buffered Reader which reads the first argument. The input text file is traversed and the first line which is the
+header is stored and copied over to the first line of the output file. Remaining lines of the text file are split by 'tab' and
+validated before any further processing. 
+
+The following validation checks are performed on the input to be sorted:
+1. null check for name
+2. null check for timestamp
+
+If either is null the record is ignored, else added to the ArrayList. 
+
+The ArrayList is then sorted using a comparator. The following checks are made at the time of comparison
+1. The data is initially sorted based on timestamp lexicographically.
+2. If two or more records have the same timestamp they are further sorted by name. 
+3. When sorting by name, case is not ignored. 
+
+The sorted list is written to the second argument which is accepted as a parameter from command line which is the absolute path to the output file.
+
+
+Steps to extend the project: 
+1. OrderController - which produces/consumes JSON/ XML data after reading from OrdersDao class.
+2. OrderDao- which communicated with the database tables to select or insert or update entries.
+3. DBUtils - to make a connection using url, driver name, db name, username and password.
